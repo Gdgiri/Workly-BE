@@ -31,7 +31,8 @@ const allowedOrigins: string[] = [
     'https://agently-fe-six.vercel.app',
     'https://workly-front-end-admin.vercel.app',
     'https://wkuser.businessongo.com',
-    'https://workly.businessongo.com'
+    'https://workly.businessongo.com',
+    'https://worklyfe.netlify.app'
 ];
 
 // CORS options (TypeScript safe)
