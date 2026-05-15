@@ -1,0 +1,9 @@
+
+ID: 02d6ba2c-9089-4a71-bb89-3e8eb996f93c
+AuthID: a1e235fc-d256-4223-971b-82b8e8589699
+Role: ADMIN
+BusinessName: demo
+BusinessEmail: null
+BusinessPhone: null
+SubscriptionId: 100a6040-aae8-4622-965b-53f9fd3faed6
+CreatedAt: Fri Jan 09 2026 18:43:35 GMT+0530 (India Standard Time)

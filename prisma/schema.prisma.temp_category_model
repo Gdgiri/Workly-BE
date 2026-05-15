@@ -1,0 +1,16 @@
+
+model Category {
+  id          String   @id @default(uuid())
+  name        String
+  type        String   // 'SERVICE' | 'PRODUCT'
+  description String?  @db.Text
+  isActive    Boolean  @default(true)
+  authId      String
+  adminId     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([adminId])
+  @@index([type])
+  @@map("categories")
+}

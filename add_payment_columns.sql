@@ -1,0 +1,4 @@
+ALTER TABLE `settings`
+ADD COLUMN `allowPartialPayment` BOOLEAN NOT NULL DEFAULT true,
+ADD COLUMN `allowNoPayment` BOOLEAN NOT NULL DEFAULT true,
+ADD COLUMN `allowFullPayment` BOOLEAN NOT NULL DEFAULT true;

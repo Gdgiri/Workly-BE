@@ -1,0 +1,7 @@
+
+
+--- [getPayments] Called at 2026-02-28T09:46:30.984Z ---
+Params: {"minAmount":1000,"status":"ALL","adminId":"6302dd5b-226a-47d5-95b3-d82d6bf02e62"}
+Final WHERE (Payments): {"adminId":"6302dd5b-226a-47d5-95b3-d82d6bf02e62","amount":{"gte":1000}}
+Final WHERE (Pending Sales): {"adminId":"6302dd5b-226a-47d5-95b3-d82d6bf02e62","paymentStatus":"PENDING","saleStatus":{"not":"CANCELLED"},"paidAmount":{"gte":1000}}
+Counts: Payments=39, Sales=0, Total=39

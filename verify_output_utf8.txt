@@ -1,0 +1,20 @@
+﻿≡ƒôè Verifying Payment Categorization...
+[ONLINEPAY] 13 | Notes: Sale created from POS.  | Method: VISA/MASTER
+[ONLINEPAY] 24 | Notes: Sale created from POS.  | Method: PAYNOW
+[ONLINEPAY] 37 | Notes: Sale created from POS.  | Method: VISA/MASTER
+[TRANSACTIONPAY] 8 | Notes: Sale created from POS.  | Method: TRANSACTIONPAY
+[ONLINEPAY] 12 | Notes: Sale created from POS.  | Method: SHOPBACK
+[PAYTM] 8 | Notes: null
+[ONLINEPAY] 12 | Notes: Sale created from POS.  | Method: PAYNOW
+[ONLINEPAY] 12 | Notes: Sale created from POS.  | Method: VISA/MASTER
+[CASH] 13 | Notes: null
+
+≡ƒôê Final Totals for Today:
+{
+  "totalCash": 13,
+  "totalDigital": 126,
+  "totalRevenue": 139,
+  "count": 9
+}
+
+Γ£à No miscategorized CASH payments found.

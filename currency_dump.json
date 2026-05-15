@@ -1,0 +1,68 @@
+[
+  {
+    "id": "492c701f-ce89-4f6d-9d2c-cddb0218ce19",
+    "adminId": "25945aeb-b1d1-4020-913e-ebcd4b51f7f6",
+    "currency": "SGD",
+    "salonName": "Indian Beauty Art"
+  },
+  {
+    "id": "4e97d0a6-6648-43c0-a0cb-477d40242c64",
+    "adminId": "d18eb567-3558-4684-88ae-45e7a1ea56c6",
+    "currency": "INR",
+    "salonName": null
+  },
+  {
+    "id": "6b2d7cef-9c5d-4a85-87b1-640ce7cf0be5",
+    "adminId": "70f5c9f3-c418-4bba-8182-00d1355dbbbe",
+    "currency": "INR",
+    "salonName": null
+  },
+  {
+    "id": "80f9a887-7eb2-4f79-becd-62511c5f885d",
+    "adminId": "34bf530a-feaa-46cc-813e-0271002e123d",
+    "currency": "INR",
+    "salonName": "ABC Services"
+  },
+  {
+    "id": "a5975669-7bbe-489a-9295-b1e92bca8ea6",
+    "adminId": "ec2bd117-58bd-4c6c-8750-e9ebebe8e9c9",
+    "currency": "INR",
+    "salonName": "Test Business 1769772650330"
+  },
+  {
+    "id": "a9c4e9ba-2d3e-4b53-a135-53cddf3a346a",
+    "adminId": "e8783e33-67ba-4f1d-9ac3-728782e57080",
+    "currency": "INR",
+    "salonName": "tailorakka"
+  },
+  {
+    "id": "b77fab71-fade-4dd2-9201-65814ac2d84e",
+    "adminId": "6302dd5b-226a-47d5-95b3-d82d6bf02e62",
+    "currency": "SGD",
+    "salonName": "Citysalon"
+  },
+  {
+    "id": "c22fff05-1ace-4e37-9144-16b7bced5b97",
+    "adminId": "350b510a-9070-417c-be55-277b03d2abc1",
+    "currency": "INR",
+    "salonName": "tailorstudio"
+  },
+  {
+    "id": "c60819a5-f8ae-409f-a235-d7d2fdeb0d7b",
+    "adminId": "b1a58be8-a0e2-4254-92ab-e57b1903e715",
+    "currency": "INR",
+    "salonName": "newadmin"
+  },
+  {
+    "id": "dd6a4435-b4e7-4e04-9418-1f6eec24c8db",
+    "adminId": "75b5e711-73ec-413f-9041-fc92fafb9473",
+    "currency": "INR",
+    "salonName": "newadmin3"
+  },
+  {
+    "id": "ef60bdb3-a7c7-4bd9-9838-711d55e77dae",
+    "adminId": "ad3cd26b-0bc2-41a6-bb88-8d3505b34659",
+    "currency": "INR",
+    "salonName": "newadmin2"
+  }
+]

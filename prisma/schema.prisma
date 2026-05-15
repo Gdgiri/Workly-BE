@@ -1,0 +1,753 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["windows", "debian-openssl-3.0.x"]
+  engineType    = "library"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              String         @id @default(uuid())
+  authId          String         @unique
+  role            UserRole       @default(CUSTOMER)
+  isActive        Boolean        @default(true)
+  approvalStatus  ApprovalStatus @default(APPROVED)
+  approvedBy      String?
+  approvedAt      DateTime?
+  rejectionReason String?        @db.Text
+  subscriptionId  String?        @unique
+  businessName    String?
+  businessEmail   String?
+  businessPhone   String?
+  businessAddress String?        @db.Text
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  country         String?        @default("India")
+  settings        Settings?
+  subscription    Subscription?  @relation(fields: [subscriptionId], references: [id])
+
+  @@index([authId])
+  @@index([approvalStatus])
+  @@index([subscriptionId])
+  @@index([role])
+  @@map("users")
+}
+
+model Service {
+  id                  String             @id @default(uuid())
+  authId              String?
+  adminId             String?
+  name                String
+  description         String?            @db.Text
+  duration            Int
+  price               Float
+  isActive            Boolean            @default(true)
+  category            String?            @default("General")
+  imgUrl              String?
+  createdAt           DateTime           @default(now())
+  updatedAt           DateTime           @updatedAt
+  checklistTemplateId String?
+  appointments        Appointment[]      @relation("PrimaryService")
+  partOfAppointments  Appointment[]      @relation("AppointmentServices")
+  checklistTemplate   ChecklistTemplate? @relation(fields: [checklistTemplateId], references: [id])
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([checklistTemplateId])
+  @@map("services")
+}
+
+model ChecklistTemplate {
+  id          String                @id @default(uuid())
+  adminId     String
+  authId      String?
+  name        String
+  description String?               @db.Text
+  fields      Json
+  isActive    Boolean               @default(true)
+  createdAt   DateTime              @default(now())
+  updatedAt   DateTime              @updatedAt
+  submissions ChecklistSubmission[]
+  services    Service[]
+
+  @@index([adminId])
+  @@map("checklist_templates")
+}
+
+model ChecklistSubmission {
+  id            String            @id @default(uuid())
+  templateId    String
+  appointmentId String?
+  serviceId     String?
+  saleId        String?           @unique
+  staffId       String
+  data          Json
+  attachments   Json?
+  submittedAt   DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  remarks       Json?
+  template      ChecklistTemplate @relation(fields: [templateId], references: [id])
+
+  @@unique([appointmentId, serviceId])
+  @@index([templateId])
+  @@map("checklist_submissions")
+}
+
+model Stylist {
+  id                   String        @id @default(uuid())
+  authId               String
+  adminId              String
+  name                 String
+  email                String?
+  phone                String?
+  specialization       String?
+  rating               Float?        @default(0)
+  isAvailable          Boolean       @default(true)
+  workingHours         Json?
+  dateSpecificHours    Json?
+  leaves               Json?
+  permissions          Json?
+  gender               String?
+  imgUrl               String?
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  originalAppointments Appointment[] @relation("OriginalStylist")
+  appointments         Appointment[]
+  sales                Sale[]
+
+  @@unique([email, adminId], name: "unique_stylist_per_admin")
+  @@index([authId])
+  @@map("stylists")
+}
+
+model Appointment {
+  id                 String            @id @default(uuid())
+  authId             String?
+  adminId            String?
+  userId             String
+  serviceId          String
+  stylistId          String?
+  originalStylistId  String?
+  startTime          DateTime
+  endTime            DateTime
+  status             AppointmentStatus @default(PENDING)
+  notes              String?           @db.Text
+  attachments        Json?
+  cancellationReason String?           @db.Text
+  totalAmount        Float?
+  paidAmount         Float             @default(0)
+  paymentStatus      PaymentStatus     @default(PENDING)
+  requiresDeposit    Boolean           @default(false)
+  depositAmount      Float?
+  cancellationFee    Float?            @default(0)
+  refundAmount       Float?            @default(0)
+  refundStatus       RefundStatus?
+  refundProcessedAt  DateTime?
+  refundProcessedBy  String?
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  originalStylist    Stylist?          @relation("OriginalStylist", fields: [originalStylistId], references: [id])
+  service            Service           @relation("PrimaryService", fields: [serviceId], references: [id])
+  services           Service[]         @relation("AppointmentServices")
+  stylist            Stylist?          @relation(fields: [stylistId], references: [id])
+  customer           Customer          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  payments           Payment[]
+  sales              Sale[]
+
+  @@index([authId])
+  @@index([userId])
+  @@index([stylistId, startTime, endTime])
+  @@index([originalStylistId], map: "appointments_originalStylistId_fkey")
+  @@index([serviceId], map: "appointments_serviceId_fkey")
+  @@map("appointments")
+}
+
+model Customer {
+  id           String            @id @default(uuid())
+  authId       String
+  adminId      String
+  name         String
+  email        String?
+  phone        String?
+  city         String?
+  attachments  Json?
+  role         String?
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  ageGroup     String?
+  dateOfBirth  String?
+  createdBy    String?
+  appointments Appointment[]
+  packages     CustomerPackage[]
+
+  @@unique([email, adminId], name: "unique_customer_per_admin")
+  @@index([authId])
+  @@index([adminId])
+  @@index([email])
+  @@map("customers")
+}
+
+model Product {
+  id        String              @id @default(uuid())
+  authId    String?
+  adminId   String?
+  name      String
+  category  String
+  sku       String              @unique
+  price     Float
+  stock     Int                 @default(0)
+  isActive  Boolean             @default(true)
+  imgUrl    String?
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+  movements InventoryMovement[]
+
+  @@index([authId])
+  @@index([adminId])
+  @@map("products")
+}
+
+model InventoryMovement {
+  id           String   @id @default(uuid())
+  productId    String
+  type         String
+  quantity     Int
+  balanceAfter Int
+  remarks      String?  @db.Text
+  authId       String?
+  adminId      String?
+  createdAt    DateTime @default(now())
+  product      Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@index([productId])
+  @@index([authId])
+  @@index([adminId])
+  @@map("inventory_movements")
+}
+
+model Package {
+  id               Int               @id @default(autoincrement())
+  authId           String?
+  adminId          String?
+  name             String
+  description      String            @db.Text
+  price            Float
+  active           Boolean           @default(true)
+  validityDays     Int               @default(0)
+  items            Json
+  imgUrl           String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  customerPackages CustomerPackage[]
+
+  @@index([authId])
+  @@index([adminId])
+  @@map("packages")
+}
+
+model CustomerPackage {
+  id                String        @id @default(uuid())
+  customerId        String
+  packageId         Int
+  authId            String?
+  adminId           String?
+  purchaseDate      DateTime      @default(now())
+  expiryDate        DateTime?
+  purchasePrice     Float
+  totalQuantity     Int
+  usedQuantity      Int           @default(0)
+  remainingQuantity Int
+  usageDetails      Json?
+  status            PackageStatus @default(ACTIVE)
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  customer          Customer      @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  package           Package       @relation(fields: [packageId], references: [id])
+
+  @@index([customerId])
+  @@index([packageId])
+  @@index([authId])
+  @@index([adminId])
+  @@index([status])
+  @@map("customer_packages")
+}
+
+model Expense {
+  id          String   @id @default(uuid())
+  authId      String?
+  adminId     String?
+  title       String
+  amount      Float
+  category    String
+  date        DateTime @default(now())
+  description String?  @db.Text
+  attachments Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  cashierName String?
+
+  @@index([authId])
+  @@index([adminId])
+  @@map("expenses")
+}
+
+model Payment {
+  id                String        @id @default(uuid())
+  authId            String?
+  adminId           String?
+  amount            Float
+  paymentMethod     String
+  paymentStatus     PaymentStatus @default(PENDING)
+  paymentType       PaymentType   @default(FULL)
+  razorpayOrderId   String?
+  razorpayPaymentId String?
+  razorpaySignature String?
+  transactionId     String?
+  notes             String?       @db.Text
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+  appointmentId     String?
+  saleId            String?
+  cashierName       String?
+  invoiceNumber     String?
+  appointment       Appointment?  @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
+  sale              Sale?         @relation(fields: [saleId], references: [id], onDelete: Cascade)
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([appointmentId])
+  @@index([saleId])
+  @@index([razorpayOrderId])
+  @@index([razorpayPaymentId])
+  @@map("payments")
+}
+
+model Sale {
+  id            String        @id @default(uuid())
+  saleNumber    String        @unique
+  customerId    String?
+  authId        String?
+  adminId       String?
+  appointmentId String?
+  items         Json
+  attachments   Json?
+  subtotal      Float
+  discount      Float         @default(0)
+  tax           Float         @default(0)
+  totalAmount   Float
+  paidAmount    Float         @default(0)
+  balanceAmount Float         @default(0)
+  paymentStatus PaymentStatus @default(PENDING)
+  saleStatus    SaleStatus    @default(COMPLETED)
+  notes         String?       @db.Text
+  createdBy     String
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  specialistId  String?
+  payments      Payment[]
+  appointment   Appointment?  @relation(fields: [appointmentId], references: [id])
+  specialist    Stylist?      @relation(fields: [specialistId], references: [id])
+
+  @@index([customerId])
+  @@index([authId])
+  @@index([adminId])
+  @@index([appointmentId])
+  @@index([saleNumber])
+  @@index([createdAt])
+  @@index([specialistId], map: "sales_specialistId_fkey")
+  @@map("sales")
+}
+
+model Quotation {
+  id          String          @id @default(uuid())
+  quoteNumber String          @unique
+  customerId  String
+  adminId     String
+  authId      String?
+  items       Json
+  subtotal    Float
+  discount    Float           @default(0)
+  tax         Float           @default(0)
+  totalAmount Float
+  status      QuotationStatus @default(DRAFT)
+  validUntil  DateTime?
+  notes       String?         @db.Text
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  negotiations QuotationNegotiation[]
+
+  @@index([customerId])
+  @@index([adminId])
+  @@index([authId])
+  @@index([quoteNumber])
+  @@map("quotations")
+}
+
+model QuotationNegotiation {
+  id               String    @id @default(uuid())
+  quotationId      String
+  previousAmount   Float
+  negotiatedAmount Float
+  description      String?   @db.Text
+  createdAt        DateTime  @default(now())
+  quotation        Quotation @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+
+  @@index([quotationId])
+  @@map("quotation_negotiations")
+}
+
+model Settings {
+  id                        String   @id @default(uuid())
+  adminId                   String   @unique
+  authId                    String?
+  razorpayKeyId             String?
+  razorpayKeySecret         String?
+  currency                  String?  @default("INR")
+  salonName                 String?
+  salonPhone                String?
+  salonAddress              String?
+  openingTime               String?  @default("09:00")
+  closingTime               String?  @default("18:00")
+  maxAdvanceBookingDays     Int?     @default(30)
+  cancellationPolicyHours   Int?     @default(24)
+  whatsappNotifications     Boolean  @default(true)
+  activePaymentMethods      Json?
+  imageUploads              Json?
+  salesIdPrefix             String?  @default("SALE-")
+  inventoryAdjustmentConfig String?  @db.Text
+  enableInventoryAdjustment Boolean  @default(true)
+  allowPartialPayment       Boolean  @default(false)
+  partialPaymentPercentage  Float?   @default(0)
+  allowNoPayment            Boolean  @default(true)
+  allowFullPayment          Boolean  @default(false)
+  allowRazorpay             Boolean  @default(false)
+  createdAt                 DateTime @default(now())
+  updatedAt                 DateTime @updatedAt
+  apiIntegrations           Json?
+  invoiceStartNumber        String?  @default("1001")
+  shortCode                 String?  @unique
+  fraudProtection           Boolean  @default(false)
+  enableVoucherOtp          Boolean  @default(true)
+  users                     User     @relation(fields: [adminId], references: [id])
+
+  @@map("settings")
+}
+
+model Subscription {
+  id                String             @id @default(uuid())
+  userId            String             @unique
+  authId            String?
+  planId            String
+  status            SubscriptionStatus @default(TRIAL)
+  startDate         DateTime           @default(now())
+  endDate           DateTime?
+  billingCycle      BillingCycle       @default(MONTHLY)
+  nextBillingDate   DateTime?
+  amount            Float
+  currency          String             @default("INR")
+  maxStylists       Int                @default(5)
+  maxAppointments   Int                @default(100)
+  maxCustomers      Int                @default(500)
+  maxStaff          Int                @default(10)
+  lastPaymentDate   DateTime?
+  lastPaymentAmount Float?
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  plan              SubscriptionPlan   @relation(fields: [planId], references: [id])
+  user              User?
+
+  @@index([userId])
+  @@index([planId])
+  @@index([status])
+  @@map("subscriptions")
+}
+
+model SubscriptionPlan {
+  id              String         @id @default(uuid())
+  name            String         @unique
+  authId          String?
+  description     String?        @db.Text
+  monthlyPrice    Float
+  quarterlyPrice  Float
+  yearlyPrice     Float
+  currency        String         @default("INR")
+  maxStylists     Int
+  maxAppointments Int
+  maxCustomers    Int
+  maxStaff        Int
+  features        Json
+  isActive        Boolean        @default(true)
+  isDefault       Boolean        @default(false)
+  isTrial         Boolean        @default(false)
+  trialDays       Int            @default(14)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  subscriptions   Subscription[]
+
+  @@map("subscription_plans")
+}
+
+model Reconciliation {
+  id               String                @id @default(uuid())
+  date             DateTime              @default(now())
+  authId           String?
+  adminId          String?
+  systemTotal      Float
+  countedTotal     Float
+  totalExpenses    Float                 @default(0)
+  difference       Float
+  status           String
+  notes            String?               @db.Text
+  cashier          String
+  paymentBreakdown Json
+  createdAt        DateTime              @default(now())
+  updatedAt        DateTime              @updatedAt
+  auditLogs        ReconciliationAudit[]
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([date])
+  @@map("reconciliations")
+}
+
+model ReconciliationAudit {
+  id                String                  @id @default(uuid())
+  authId            String
+  adminId           String
+  attemptTimestamp  DateTime                @default(now())
+  attemptType       ReconciliationAuditType
+  attemptStatus     AuditAttemptStatus      @default(SUCCESS)
+  errorMessage      String?                 @db.Text
+  errorCode         String?
+  inputData         Json
+  calculatedResults Json
+  discrepancyAmount Float?
+  discrepancyType   String?
+  reconciliationId  String?
+  userName          String?
+  userRole          String?
+  ipAddress         String?
+  userAgent         String?
+  sessionId         String?
+  requestId         String?
+  duration          Int?
+  isDeleted         Boolean                 @default(false)
+  deletedAt         DateTime?
+  deletedBy         String?
+  deletionReason    String?                 @db.Text
+  createdAt         DateTime                @default(now())
+  updatedAt         DateTime                @updatedAt
+  reconciliation    Reconciliation?         @relation(fields: [reconciliationId], references: [id])
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([reconciliationId])
+  @@index([attemptTimestamp])
+  @@index([attemptType])
+  @@index([attemptStatus])
+  @@index([isDeleted])
+  @@map("reconciliation_audits")
+}
+
+model Voucher {
+  id           String         @id @default(uuid())
+  authId       String?
+  adminId      String?
+  code         String         @unique
+  description  String?        @db.Text
+  value        Float
+  type         String         @default("fixed")
+  status       String         @default("active")
+  expiryDate   String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  name         String?
+  sellingPrice Float          @default(0)
+  validityDays Int            @default(0)
+  claims       VoucherClaim[]
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([code])
+  @@map("vouchers")
+}
+
+model VoucherClaim {
+  id           String   @id @default(uuid())
+  authId       String?
+  adminId      String?
+  voucherId    String
+  voucherCode  String
+  customerId   String?
+  customerName String?
+  status       String   @default("claimed")
+  balance      Float    @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  usageHistory Json?
+  expiryDate   String?
+  voucher      Voucher  @relation(fields: [voucherId], references: [id], onDelete: Cascade)
+
+  @@index([authId])
+  @@index([adminId])
+  @@index([voucherId])
+  @@index([customerId])
+  @@map("voucher_claims")
+}
+
+model Category {
+  id          String   @id @default(uuid())
+  name        String
+  type        String
+  description String?  @db.Text
+  isActive    Boolean  @default(true)
+  authId      String
+  adminId     String
+  imgUrl      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([adminId])
+  @@index([type])
+  @@map("categories")
+}
+
+model MessageLog {
+  id            String   @id @default(uuid())
+  adminId       String
+  authId        String?
+  customerPhone String
+  customerName  String?
+  orderId       String?
+  type          String   @default("Custom")
+  status        String   @default("PENDING")
+  content       String?  @db.Text
+  error         String?  @db.Text
+  metadata      Json?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([adminId])
+  @@index([status])
+  @@map("message_logs")
+}
+
+model Otp {
+  id           String   @id @default(uuid())
+  adminId      String
+  customerId   String
+  identifier   String
+  code         String
+  expiresAt    DateTime
+  isUsed       Boolean  @default(false)
+  attemptCount Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([adminId])
+  @@index([customerId])
+  @@index([identifier])
+  @@map("otps")
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  MANAGER
+  STAFF
+  CUSTOMER
+  USER
+}
+
+enum ApprovalStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum SubscriptionStatus {
+  TRIAL
+  ACTIVE
+  SUSPENDED
+  CANCELLED
+  EXPIRED
+}
+
+enum BillingCycle {
+  MONTHLY
+  QUARTERLY
+  YEARLY
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  PARTIAL
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+
+enum PaymentType {
+  ADVANCE
+  REMAINING
+  FULL
+}
+
+enum SaleStatus {
+  DRAFT
+  COMPLETED
+  CANCELLED
+  REFUNDED
+}
+
+enum RefundStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  NOT_APPLICABLE
+  APPROVED
+  REJECTED
+  PROCESSED
+  REFUNDED
+}
+
+enum PackageStatus {
+  ACTIVE
+  EXPIRED
+  EXHAUSTED
+  CANCELLED
+}
+
+enum ReconciliationAuditType {
+  CALCULATE
+  SAVE
+  UPDATE
+  DELETE
+}
+
+enum AuditAttemptStatus {
+  SUCCESS
+  FAILED
+  PARTIAL
+}
+
+enum QuotationStatus {
+  DRAFT
+  SENT
+  APPROVED
+  DECLINED
+  EXPIRED
+  INVOICED
+}

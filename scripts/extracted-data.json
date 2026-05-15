@@ -1,0 +1,2350 @@
+{
+  "summary": {
+    "totalRows": 596,
+    "totalCustomers": 546,
+    "totalPackages": 6,
+    "totalServices": 14,
+    "totalProducts": 0
+  },
+  "customers": [
+    {
+      "code": "BS100006",
+      "name": "MAY TAN"
+    },
+    {
+      "code": "BS100009",
+      "name": "Shermein"
+    },
+    {
+      "code": "BS100011",
+      "name": "Khristine"
+    },
+    {
+      "code": "BS100013",
+      "name": "Cleo"
+    },
+    {
+      "code": "BS100016",
+      "name": "Sharifa"
+    },
+    {
+      "code": "BS100023",
+      "name": "CHLOE YAP"
+    },
+    {
+      "code": "BS100026",
+      "name": "ALICIA CHIA"
+    },
+    {
+      "code": "BS100031",
+      "name": "NAJIHAH"
+    },
+    {
+      "code": "BS100037",
+      "name": "sheming"
+    },
+    {
+      "code": "BS100039",
+      "name": "SHERYL"
+    },
+    {
+      "code": "BS100044",
+      "name": "CHONG POH YIM"
+    },
+    {
+      "code": "BS100046",
+      "name": "ELLIS YES"
+    },
+    {
+      "code": "BS100050",
+      "name": "Jasma"
+    },
+    {
+      "code": "BS100051",
+      "name": "KAREN SIA"
+    },
+    {
+      "code": "BS100055",
+      "name": "CARRIE HAN"
+    },
+    {
+      "code": "BS100056",
+      "name": "THERESA CHAN"
+    },
+    {
+      "code": "BS100064",
+      "name": "DIVYASHREE"
+    },
+    {
+      "code": "BS100065",
+      "name": "SHAHIRA"
+    },
+    {
+      "code": "BS100074",
+      "name": "QIAN YII"
+    },
+    {
+      "code": "BS100076",
+      "name": "YVANNE LAI"
+    },
+    {
+      "code": "BS100081",
+      "name": "LOH EE LING"
+    },
+    {
+      "code": "BS100085",
+      "name": "LAR LENE"
+    },
+    {
+      "code": "BS100087",
+      "name": "CLARA TAN"
+    },
+    {
+      "code": "BS100088",
+      "name": "TAN SHER LI"
+    },
+    {
+      "code": "BS100089",
+      "name": "YU YU MAY"
+    },
+    {
+      "code": "BS100091",
+      "name": "KAMY"
+    },
+    {
+      "code": "BS100092",
+      "name": "ELIEEN LEONG"
+    },
+    {
+      "code": "BS100095",
+      "name": "MYAT THIRI"
+    },
+    {
+      "code": "BS100107",
+      "name": "DIAN"
+    },
+    {
+      "code": "BS100113",
+      "name": "CHERYL CHUA"
+    },
+    {
+      "code": "BS100119",
+      "name": "IAN"
+    },
+    {
+      "code": "BS100124",
+      "name": "CHENLI"
+    },
+    {
+      "code": "BS100125",
+      "name": "nadhirah"
+    },
+    {
+      "code": "BS100126",
+      "name": "Angel Vi"
+    },
+    {
+      "code": "BS100127",
+      "name": "Christine Chem"
+    },
+    {
+      "code": "BS100130",
+      "name": "HUI TING"
+    },
+    {
+      "code": "BS100131",
+      "name": "Belle"
+    },
+    {
+      "code": "BS100132",
+      "name": "ADELYN"
+    },
+    {
+      "code": "BS100133",
+      "name": "KAMINI"
+    },
+    {
+      "code": "BS100134",
+      "name": "NUR ASHIKIN"
+    },
+    {
+      "code": "BS100135",
+      "name": "CHITRA M"
+    },
+    {
+      "code": "BS100139",
+      "name": "Farella"
+    },
+    {
+      "code": "BS100140",
+      "name": "Almash"
+    },
+    {
+      "code": "BS100142",
+      "name": "jay"
+    },
+    {
+      "code": "BS100143",
+      "name": "Yuanne Lai"
+    },
+    {
+      "code": "BS100144",
+      "name": "Wee Teng"
+    },
+    {
+      "code": "BS100145",
+      "name": "vishakha"
+    },
+    {
+      "code": "BS100146",
+      "name": "Sim quian hui"
+    },
+    {
+      "code": "BS100147",
+      "name": "Kan tia feng"
+    },
+    {
+      "code": "BS100148",
+      "name": "Sindy"
+    },
+    {
+      "code": "BS100149",
+      "name": "Rina"
+    },
+    {
+      "code": "BS100150",
+      "name": "jonn k"
+    },
+    {
+      "code": "BS100151",
+      "name": "Caelyn"
+    },
+    {
+      "code": "BS100154",
+      "name": "Trenna ong"
+    },
+    {
+      "code": "BS100155",
+      "name": "Idah"
+    },
+    {
+      "code": "BS100157",
+      "name": "Sean tan"
+    },
+    {
+      "code": "BS100158",
+      "name": "Xineth Dharani"
+    },
+    {
+      "code": "BS100160",
+      "name": "Cynthia Tan"
+    },
+    {
+      "code": "BS100161",
+      "name": "Sabrina"
+    },
+    {
+      "code": "BS100162",
+      "name": "Ting Xuan"
+    },
+    {
+      "code": "BS100164",
+      "name": "Amirah"
+    },
+    {
+      "code": "BS100165",
+      "name": "Tan Chin Yi"
+    },
+    {
+      "code": "BS100166",
+      "name": "Corin"
+    },
+    {
+      "code": "BS100169",
+      "name": "Wendy"
+    },
+    {
+      "code": "BS100171",
+      "name": "Sindy tan"
+    },
+    {
+      "code": "BS100172",
+      "name": "Hazel  tan"
+    },
+    {
+      "code": "BS100174",
+      "name": "JASLYN"
+    },
+    {
+      "code": "BS100175",
+      "name": "JAZZIYN"
+    },
+    {
+      "code": "CS00001-1",
+      "name": "Jayanthi"
+    },
+    {
+      "code": "CS00005-1",
+      "name": "Adeline"
+    },
+    {
+      "code": "CS00006-1",
+      "name": "Afrah"
+    },
+    {
+      "code": "CS00009-1",
+      "name": "Aishath"
+    },
+    {
+      "code": "CS00010-1",
+      "name": "Aisyah"
+    },
+    {
+      "code": "CS00011-1",
+      "name": "Akhirah Aira"
+    },
+    {
+      "code": "CS00012-1",
+      "name": "Alex"
+    },
+    {
+      "code": "CS00014-1",
+      "name": "Allyn Lim"
+    },
+    {
+      "code": "CS00016-1",
+      "name": "Amber lyn"
+    },
+    {
+      "code": "CS00017-1",
+      "name": "Amelia Lim"
+    },
+    {
+      "code": "CS00018-1",
+      "name": "Amiera"
+    },
+    {
+      "code": "CS00019-1",
+      "name": "Amisha Prakash"
+    },
+    {
+      "code": "CS00020-1",
+      "name": "Andi Arifah"
+    },
+    {
+      "code": "CS00021-1",
+      "name": "Angela Koh"
+    },
+    {
+      "code": "CS00022-1",
+      "name": "Angelica"
+    },
+    {
+      "code": "CS00023-1",
+      "name": "Angelina"
+    },
+    {
+      "code": "CS00026-1",
+      "name": "Annie"
+    },
+    {
+      "code": "CS00027-1",
+      "name": "Annie Yup"
+    },
+    {
+      "code": "CS00031-1",
+      "name": "Belle Lam "
+    },
+    {
+      "code": "CS00032-1",
+      "name": "Beverly"
+    },
+    {
+      "code": "CS00033-1",
+      "name": "Brahm"
+    },
+    {
+      "code": "CS00036-1",
+      "name": "Celine"
+    },
+    {
+      "code": "CS00037-1",
+      "name": "Chan Wei Kuan"
+    },
+    {
+      "code": "CS00039-1",
+      "name": "Charmaine"
+    },
+    {
+      "code": "CS00040-1",
+      "name": "Cheri"
+    },
+    {
+      "code": "CS00041-1",
+      "name": "Chermaine"
+    },
+    {
+      "code": "CS00042-1",
+      "name": "Chewyee"
+    },
+    {
+      "code": "CS00043-1",
+      "name": "Chloe Lim"
+    },
+    {
+      "code": "CS00044-1",
+      "name": "Ciwei"
+    },
+    {
+      "code": "CS00046-1",
+      "name": "Cui Lin"
+    },
+    {
+      "code": "CS00047-1",
+      "name": "Dania"
+    },
+    {
+      "code": "CS00048-1",
+      "name": "Dawn"
+    },
+    {
+      "code": "CS00049-1",
+      "name": "Dawn Chua"
+    },
+    {
+      "code": "CS00050-1",
+      "name": "Dawn Yang"
+    },
+    {
+      "code": "CS00051-1",
+      "name": "Deborah"
+    },
+    {
+      "code": "CS00052-1",
+      "name": "Dee"
+    },
+    {
+      "code": "CS00053-1",
+      "name": "Deepa"
+    },
+    {
+      "code": "CS00054-1",
+      "name": "Deivanai"
+    },
+    {
+      "code": "CS00055-1",
+      "name": "Delia Darmawan"
+    },
+    {
+      "code": "CS00056-1",
+      "name": "Denise"
+    },
+    {
+      "code": "CS00058-1",
+      "name": "Diana "
+    },
+    {
+      "code": "CS00059-1",
+      "name": "Diane Faderagao"
+    },
+    {
+      "code": "CS00060-1",
+      "name": "DiVika"
+    },
+    {
+      "code": "CS00061-1",
+      "name": "Dorothy"
+    },
+    {
+      "code": "CS00062-1",
+      "name": "Durga"
+    },
+    {
+      "code": "CS00063-1",
+      "name": "Edna"
+    },
+    {
+      "code": "CS00064-1",
+      "name": "Eileen"
+    },
+    {
+      "code": "CS00065-1",
+      "name": "Eka"
+    },
+    {
+      "code": "CS00066-1",
+      "name": "Ekta jha"
+    },
+    {
+      "code": "CS00068-1",
+      "name": "Elaine"
+    },
+    {
+      "code": "CS00069-1",
+      "name": "Eleanor Tan"
+    },
+    {
+      "code": "CS00070-1",
+      "name": "Elisabeth"
+    },
+    {
+      "code": "CS00071-1",
+      "name": "Eliza Hong"
+    },
+    {
+      "code": "CS00072-1",
+      "name": "Ella "
+    },
+    {
+      "code": "CS00073-1",
+      "name": "Ellie"
+    },
+    {
+      "code": "CS00074-1",
+      "name": "Elly Jamal"
+    },
+    {
+      "code": "CS00075-1",
+      "name": "Estelle"
+    },
+    {
+      "code": "CS00076-1",
+      "name": "Esther Tang"
+    },
+    {
+      "code": "CS00077-1",
+      "name": "Esther Howe"
+    },
+    {
+      "code": "CS00078-1",
+      "name": "Ester K"
+    },
+    {
+      "code": "CS00079-1",
+      "name": "Eunice"
+    },
+    {
+      "code": "CS00080-1",
+      "name": "Evangeline"
+    },
+    {
+      "code": "CS00081-1",
+      "name": "Evelyn"
+    },
+    {
+      "code": "CS00082-1",
+      "name": "Evonne Low"
+    },
+    {
+      "code": "CS00083-1",
+      "name": "Felicia"
+    },
+    {
+      "code": "CS00084-1",
+      "name": "Florence Thein"
+    },
+    {
+      "code": "CS00085-1",
+      "name": "Francesca"
+    },
+    {
+      "code": "CS00087-1",
+      "name": "Gekluo"
+    },
+    {
+      "code": "CS00088-1",
+      "name": "Gina Toh"
+    },
+    {
+      "code": "CS00089-1",
+      "name": "Glona Evangela Michael"
+    },
+    {
+      "code": "CS00090-1",
+      "name": "Gokce"
+    },
+    {
+      "code": "CS00091-1",
+      "name": "Grace"
+    },
+    {
+      "code": "CS00092-1",
+      "name": "Grace"
+    },
+    {
+      "code": "CS00093-1",
+      "name": "Hannah"
+    },
+    {
+      "code": "CS00094-1",
+      "name": "Hazel Tan"
+    },
+    {
+      "code": "CS00095-1",
+      "name": "Hyunah Sah"
+    },
+    {
+      "code": "CS00096-1",
+      "name": "Ima"
+    },
+    {
+      "code": "CS00097-1",
+      "name": "Imeshi"
+    },
+    {
+      "code": "CS00098-1",
+      "name": "Indah"
+    },
+    {
+      "code": "CS00099-1",
+      "name": "Indhara"
+    },
+    {
+      "code": "CS00100-1",
+      "name": "Jaime"
+    },
+    {
+      "code": "CS00101-1",
+      "name": "Jakie"
+    },
+    {
+      "code": "CS00102-1",
+      "name": "Jamie"
+    },
+    {
+      "code": "CS00103-1",
+      "name": "Janice"
+    },
+    {
+      "code": "CS00105-1",
+      "name": "Jasmine"
+    },
+    {
+      "code": "CS00106-1",
+      "name": "Jaypee"
+    },
+    {
+      "code": "CS00107-1",
+      "name": "Jazz zhang"
+    },
+    {
+      "code": "CS00108-1",
+      "name": "Jean"
+    },
+    {
+      "code": "CS00109-1",
+      "name": "Jenna"
+    },
+    {
+      "code": "CS00110-1",
+      "name": "Jenny HWO"
+    },
+    {
+      "code": "CS00111-1",
+      "name": "Jenny Teo"
+    },
+    {
+      "code": "CS00112-1",
+      "name": "Jennylyn mercado"
+    },
+    {
+      "code": "CS00113-1",
+      "name": "Jessica"
+    },
+    {
+      "code": "CS00114-1",
+      "name": "Jia Hui"
+    },
+    {
+      "code": "CS00116-1",
+      "name": "Jiaying"
+    },
+    {
+      "code": "CS00117-1",
+      "name": "Jin Yan"
+    },
+    {
+      "code": "CS00118-1",
+      "name": "Juan delgado"
+    },
+    {
+      "code": "CS00119-1",
+      "name": "Joana"
+    },
+    {
+      "code": "CS00120-1",
+      "name": "Josephine"
+    },
+    {
+      "code": "CS00121-1",
+      "name": "Josie"
+    },
+    {
+      "code": "CS00122-1",
+      "name": "Jovin"
+    },
+    {
+      "code": "CS00124-1",
+      "name": "Julia lee"
+    },
+    {
+      "code": "CS00125-1",
+      "name": "Jumaat"
+    },
+    {
+      "code": "CS00126-1",
+      "name": "K J"
+    },
+    {
+      "code": "CS00129-1",
+      "name": "Kirthana"
+    },
+    {
+      "code": "CS00130-1",
+      "name": "Klement"
+    },
+    {
+      "code": "CS00131-1",
+      "name": "Koiry"
+    },
+    {
+      "code": "CS00132-1",
+      "name": "Kris"
+    },
+    {
+      "code": "CS00133-1",
+      "name": "Krish Simon"
+    },
+    {
+      "code": "CS00134-1",
+      "name": "Krishanthini"
+    },
+    {
+      "code": "CS00135-1",
+      "name": "Krishia Faith Legaspi"
+    },
+    {
+      "code": "CS00136-1",
+      "name": "Kristie"
+    },
+    {
+      "code": "CS00137-1",
+      "name": "Kumar"
+    },
+    {
+      "code": "CS00138-1",
+      "name": "leila"
+    },
+    {
+      "code": "CS00139-1",
+      "name": "lene law"
+    },
+    {
+      "code": "CS00140-1",
+      "name": "Leong xiao li"
+    },
+    {
+      "code": "CS00141-1",
+      "name": "Leyi"
+    },
+    {
+      "code": "CS00142-1",
+      "name": "Lik xuan "
+    },
+    {
+      "code": "CS00143-1",
+      "name": "lillan"
+    },
+    {
+      "code": "CS00144-1",
+      "name": "lim ching"
+    },
+    {
+      "code": "CS00145-1",
+      "name": "limzheng ying"
+    },
+    {
+      "code": "CS00146-1",
+      "name": "lina"
+    },
+    {
+      "code": "CS00147-1",
+      "name": "ling"
+    },
+    {
+      "code": "CS00148-1",
+      "name": "ling tuk fen"
+    },
+    {
+      "code": "CS00149-1",
+      "name": "lishan"
+    },
+    {
+      "code": "CS00150-1",
+      "name": "liz fox"
+    },
+    {
+      "code": "CS00151-1",
+      "name": "low tian lynn"
+    },
+    {
+      "code": "CS00152-1",
+      "name": "lydia pang"
+    },
+    {
+      "code": "CS00153-1",
+      "name": "lynn"
+    },
+    {
+      "code": "CS00155-1",
+      "name": "mai"
+    },
+    {
+      "code": "CS00156-1",
+      "name": "Maira"
+    },
+    {
+      "code": "CS00157-1",
+      "name": "mamuani"
+    },
+    {
+      "code": "CS00158-1",
+      "name": "manisah"
+    },
+    {
+      "code": "CS00159-1",
+      "name": "marilyn"
+    },
+    {
+      "code": "CS00160-1",
+      "name": "mary"
+    },
+    {
+      "code": "CS00161-1",
+      "name": "may"
+    },
+    {
+      "code": "CS00163-1",
+      "name": "mel atiqah"
+    },
+    {
+      "code": "CS00164-1",
+      "name": "mellisa gouw"
+    },
+    {
+      "code": "CS00165-1",
+      "name": "miao hui"
+    },
+    {
+      "code": "CS00166-1",
+      "name": "michelle"
+    },
+    {
+      "code": "CS00167-1",
+      "name": "michelle"
+    },
+    {
+      "code": "CS00168-1",
+      "name": "michelle loh"
+    },
+    {
+      "code": "CS00169-1",
+      "name": "mok hui khum"
+    },
+    {
+      "code": "CS00170-1",
+      "name": "Nadia"
+    },
+    {
+      "code": "CS00171-1",
+      "name": "Nadiah"
+    },
+    {
+      "code": "CS00172-1",
+      "name": "Nadia"
+    },
+    {
+      "code": "CS00173-1",
+      "name": "natalie teo"
+    },
+    {
+      "code": "CS00174-1",
+      "name": "natasha"
+    },
+    {
+      "code": "CS00175-1",
+      "name": "nathalie ong"
+    },
+    {
+      "code": "CS00176-1",
+      "name": "nayli yasmine"
+    },
+    {
+      "code": "CS00177-1",
+      "name": "nerissa"
+    },
+    {
+      "code": "CS00178-1",
+      "name": "neshani samarasighe"
+    },
+    {
+      "code": "CS00179-1",
+      "name": "nicole gandhi"
+    },
+    {
+      "code": "CS00180-1",
+      "name": "nini"
+    },
+    {
+      "code": "CS00181-1",
+      "name": "noriessa"
+    },
+    {
+      "code": "CS00182-1",
+      "name": "nur atiqah"
+    },
+    {
+      "code": "CS00183-1",
+      "name": "nur nadia"
+    },
+    {
+      "code": "CS00184-1",
+      "name": "nurul"
+    },
+    {
+      "code": "CS00185-1",
+      "name": "numljannah"
+    },
+    {
+      "code": "CS00186-1",
+      "name": "ohlin"
+    },
+    {
+      "code": "CS00187-1",
+      "name": "ong"
+    },
+    {
+      "code": "CS00189-1",
+      "name": "peijuan "
+    },
+    {
+      "code": "CS00190-1",
+      "name": "phoenix wong"
+    },
+    {
+      "code": "CS00191-1",
+      "name": "pooja"
+    },
+    {
+      "code": "CS00192-1",
+      "name": "poornima"
+    },
+    {
+      "code": "CS00193-1",
+      "name": "premala"
+    },
+    {
+      "code": "CS00194-1",
+      "name": "pristine"
+    },
+    {
+      "code": "CS00195-1",
+      "name": "quynh"
+    },
+    {
+      "code": "CS00196-1",
+      "name": "rachael"
+    },
+    {
+      "code": "CS00197-1",
+      "name": "racher"
+    },
+    {
+      "code": "CS00198-1",
+      "name": "ranjeetha"
+    },
+    {
+      "code": "CS00199-1",
+      "name": "rena"
+    },
+    {
+      "code": "CS00200-1",
+      "name": "rona faith"
+    },
+    {
+      "code": "CS00201-1",
+      "name": "rozanne"
+    },
+    {
+      "code": "CS00202-1",
+      "name": "ruth"
+    },
+    {
+      "code": "CS00203-1",
+      "name": "ryan santiago"
+    },
+    {
+      "code": "CS00205-1",
+      "name": "sandra"
+    },
+    {
+      "code": "CS00206-1",
+      "name": "santhi"
+    },
+    {
+      "code": "CS00207-1",
+      "name": "sara"
+    },
+    {
+      "code": "CS00208-1",
+      "name": "sarah"
+    },
+    {
+      "code": "CS00209-1",
+      "name": "selina"
+    },
+    {
+      "code": "CS00210-1",
+      "name": "serena"
+    },
+    {
+      "code": "CS00211-1",
+      "name": "shaan"
+    },
+    {
+      "code": "CS00212-1",
+      "name": "shah"
+    },
+    {
+      "code": "CS00213-1",
+      "name": "shahirah"
+    },
+    {
+      "code": "CS00214-1",
+      "name": "shamila"
+    },
+    {
+      "code": "CS00215-1",
+      "name": "sharol"
+    },
+    {
+      "code": "CS00216-1",
+      "name": "shereen"
+    },
+    {
+      "code": "CS00217-1",
+      "name": "sherrie"
+    },
+    {
+      "code": "CS00218-1",
+      "name": "shihui"
+    },
+    {
+      "code": "CS00219-1",
+      "name": "shirley teo"
+    },
+    {
+      "code": "CS00221-1",
+      "name": "sim"
+    },
+    {
+      "code": "CS00222-1",
+      "name": "sim yu ting"
+    },
+    {
+      "code": "CS00223-1",
+      "name": "sing hui"
+    },
+    {
+      "code": "CS00224-1",
+      "name": "siroshini"
+    },
+    {
+      "code": "CS00225-1",
+      "name": "siti"
+    },
+    {
+      "code": "CS00226-1",
+      "name": "siti noreza binte ismail"
+    },
+    {
+      "code": "CS00227-1",
+      "name": "sonia"
+    },
+    {
+      "code": "CS00228-1",
+      "name": "stephanie"
+    },
+    {
+      "code": "CS00229-1",
+      "name": "stephy"
+    },
+    {
+      "code": "CS00230-1",
+      "name": "su myat phyo"
+    },
+    {
+      "code": "CS00231-1",
+      "name": "sue tean"
+    },
+    {
+      "code": "CS00232-1",
+      "name": "syaidatunnisa"
+    },
+    {
+      "code": "CS00233-1",
+      "name": "syakirah"
+    },
+    {
+      "code": "CS00234-1",
+      "name": "sylvie"
+    },
+    {
+      "code": "CS00235-1",
+      "name": "tamara chavee"
+    },
+    {
+      "code": "CS00236-1",
+      "name": "tan qing lin"
+    },
+    {
+      "code": "CS00237-1",
+      "name": "tan xin tie"
+    },
+    {
+      "code": "CS00238-1",
+      "name": "tan wenjia"
+    },
+    {
+      "code": "CS00239-1",
+      "name": "tauziyati"
+    },
+    {
+      "code": "CS00240-1",
+      "name": "tay siew hui"
+    },
+    {
+      "code": "CS00241-1",
+      "name": "thein"
+    },
+    {
+      "code": "CS00242-1",
+      "name": "tian"
+    },
+    {
+      "code": "CS00243-1",
+      "name": "tiffany"
+    },
+    {
+      "code": "CS00244-1",
+      "name": "tiffany sau"
+    },
+    {
+      "code": "CS00245-1",
+      "name": "tracy hng"
+    },
+    {
+      "code": "CS00246-1",
+      "name": "umme"
+    },
+    {
+      "code": "CS00248-1",
+      "name": "valarie koh yi ting"
+    },
+    {
+      "code": "CS00249-1",
+      "name": "veron"
+    },
+    {
+      "code": "CS00250-1",
+      "name": "vicki"
+    },
+    {
+      "code": "CS00251-1",
+      "name": "Victoria Neoh"
+    },
+    {
+      "code": "CS00252-1",
+      "name": "Vinitha"
+    },
+    {
+      "code": "CS00253-1",
+      "name": "Wai"
+    },
+    {
+      "code": "CS00256-1",
+      "name": "wilda"
+    },
+    {
+      "code": "CS00257-1",
+      "name": "winni"
+    },
+    {
+      "code": "CS00258-1",
+      "name": "winnie"
+    },
+    {
+      "code": "CS00259-1",
+      "name": "winston boo"
+    },
+    {
+      "code": "CS00260-1",
+      "name": "xie hui ting"
+    },
+    {
+      "code": "CS00261-1",
+      "name": "xue qi koh"
+    },
+    {
+      "code": "CS00262-1",
+      "name": "yang ziwei"
+    },
+    {
+      "code": "CS00263-1",
+      "name": "yi ling"
+    },
+    {
+      "code": "CS00264-1",
+      "name": "yiying"
+    },
+    {
+      "code": "CS00265-1",
+      "name": "yong wei yen"
+    },
+    {
+      "code": "CS00267-1",
+      "name": "yuki"
+    },
+    {
+      "code": "CS00268-1",
+      "name": "zaw"
+    },
+    {
+      "code": "CS00269-1",
+      "name": "zoey"
+    },
+    {
+      "code": "CS00270-1",
+      "name": "kylicia"
+    },
+    {
+      "code": "CS00275-1",
+      "name": "shakya"
+    },
+    {
+      "code": "CS00276-1",
+      "name": "CHANDANA"
+    },
+    {
+      "code": "CS00278-1",
+      "name": "Baanu"
+    },
+    {
+      "code": "CS00280-1",
+      "name": "Santhi"
+    },
+    {
+      "code": "CS00281-1",
+      "name": "Juno Liu"
+    },
+    {
+      "code": "CS00282-1",
+      "name": "Natasha"
+    },
+    {
+      "code": "CS00283-1",
+      "name": "Ashmita "
+    },
+    {
+      "code": "CS00284-1",
+      "name": "Cedric"
+    },
+    {
+      "code": "CS00285-1",
+      "name": "Amelia"
+    },
+    {
+      "code": "CS00286-1",
+      "name": "Ross"
+    },
+    {
+      "code": "CS00287-1",
+      "name": "Giselle"
+    },
+    {
+      "code": "CS00289-1",
+      "name": "Jasmine"
+    },
+    {
+      "code": "CS00290-1",
+      "name": "Jiahui"
+    },
+    {
+      "code": "CS00291-1",
+      "name": "Micele"
+    },
+    {
+      "code": "CS00292-1",
+      "name": "Suetmei"
+    },
+    {
+      "code": "CS00384-1",
+      "name": "RABAB K M"
+    },
+    {
+      "code": "CS00447-1",
+      "name": "teresa teo"
+    },
+    {
+      "code": "CS00448-1",
+      "name": "Gillian"
+    },
+    {
+      "code": "CS00449-1",
+      "name": "hassan saeran"
+    },
+    {
+      "code": "CS00450-1",
+      "name": "Michael Lin"
+    },
+    {
+      "code": "CS00455-1",
+      "name": "Anvitha "
+    },
+    {
+      "code": "CS00456-1",
+      "name": "Tan Xiong Wei"
+    },
+    {
+      "code": "CS00457-1",
+      "name": "fatimah"
+    },
+    {
+      "code": "CS00458-1",
+      "name": "SHAMINI PATRICK"
+    },
+    {
+      "code": "CS00460-1",
+      "name": "Nirmala"
+    },
+    {
+      "code": "CS00461-1",
+      "name": "tan you hock"
+    },
+    {
+      "code": "CS00462-1",
+      "name": "sheralin lim"
+    },
+    {
+      "code": "CS00464-1",
+      "name": "su"
+    },
+    {
+      "code": "CS00465-1",
+      "name": "lanet"
+    },
+    {
+      "code": "CS00466-1",
+      "name": "fiona"
+    },
+    {
+      "code": "CS00467-1",
+      "name": "jayanthi"
+    },
+    {
+      "code": "CS00471-1",
+      "name": "nobi lem"
+    },
+    {
+      "code": "CS00472-1",
+      "name": "apple"
+    },
+    {
+      "code": "CS00473-1",
+      "name": "moon"
+    },
+    {
+      "code": "CS00474-1",
+      "name": "nigel lim"
+    },
+    {
+      "code": "CS00475-1",
+      "name": "charmaine"
+    },
+    {
+      "code": "CS00476-1",
+      "name": "clare"
+    },
+    {
+      "code": "CS00477-1",
+      "name": "daryl"
+    },
+    {
+      "code": "CS00479-1",
+      "name": "wira"
+    },
+    {
+      "code": "CS00480-1",
+      "name": "shamee"
+    },
+    {
+      "code": "CS00481-1",
+      "name": "lawanya"
+    },
+    {
+      "code": "CS00482-1",
+      "name": "Joelee"
+    },
+    {
+      "code": "CS00483-1",
+      "name": "joey"
+    },
+    {
+      "code": "CS00485-1",
+      "name": "jacelyn"
+    },
+    {
+      "code": "CS00487-1",
+      "name": "akshra "
+    },
+    {
+      "code": "CS00488-1",
+      "name": "eva"
+    },
+    {
+      "code": "CS00489-1",
+      "name": "felicia"
+    },
+    {
+      "code": "CS00492-1",
+      "name": "Ava Chiu Wan "
+    },
+    {
+      "code": "CS00494-1",
+      "name": "aura"
+    },
+    {
+      "code": "CS00495-1",
+      "name": "sangeetha"
+    },
+    {
+      "code": "CS00496-1",
+      "name": "izah"
+    },
+    {
+      "code": "CS00499-1",
+      "name": "kimberly"
+    },
+    {
+      "code": "CS00500-1",
+      "name": "jenny"
+    },
+    {
+      "code": "CS00501-1",
+      "name": "fadzli"
+    },
+    {
+      "code": "CS00502-1",
+      "name": "xavier"
+    },
+    {
+      "code": "CS00504-1",
+      "name": "seechunfah "
+    },
+    {
+      "code": "CS00505-1",
+      "name": "dijah"
+    },
+    {
+      "code": "CS00506-1",
+      "name": "Pei Yi "
+    },
+    {
+      "code": "CS00507-1",
+      "name": "ewan"
+    },
+    {
+      "code": "CS00511-1",
+      "name": "VEL"
+    },
+    {
+      "code": "CS00513-1",
+      "name": "gayathiri"
+    },
+    {
+      "code": "CS00514-1",
+      "name": "rowena"
+    },
+    {
+      "code": "CS00515-1",
+      "name": "valroy"
+    },
+    {
+      "code": "CS00516-1",
+      "name": "margaret"
+    },
+    {
+      "code": "CS00518-1",
+      "name": "THEVAR "
+    },
+    {
+      "code": "CS00519-1",
+      "name": "RUIQI"
+    },
+    {
+      "code": "CS00520-1",
+      "name": "CHARMAINE"
+    },
+    {
+      "code": "CS00522-1",
+      "name": "YUAN TING"
+    },
+    {
+      "code": "CS00523-1",
+      "name": "jasvir kaur"
+    },
+    {
+      "code": "CS00524-1",
+      "name": "MILDRED"
+    },
+    {
+      "code": "CS00525-1",
+      "name": "chong wei ling"
+    },
+    {
+      "code": "CS00526-1",
+      "name": "SABRINA"
+    },
+    {
+      "code": "CS00527-1",
+      "name": "selva"
+    },
+    {
+      "code": "CS00528-1",
+      "name": "christy"
+    },
+    {
+      "code": "CS00529-1",
+      "name": "Rosy"
+    },
+    {
+      "code": "CS00530-1",
+      "name": "Tan Qian Wei"
+    },
+    {
+      "code": "CS00531-1",
+      "name": "Wee Chian"
+    },
+    {
+      "code": "CS00532-1",
+      "name": "Lim sherly "
+    },
+    {
+      "code": "CS00533-1",
+      "name": "Carol"
+    },
+    {
+      "code": "CS00534-1",
+      "name": "ALLISON"
+    },
+    {
+      "code": "CS00535-1",
+      "name": "artha"
+    },
+    {
+      "code": "CS00536-1",
+      "name": "cindy"
+    },
+    {
+      "code": "CS00537-1",
+      "name": "annabel"
+    },
+    {
+      "code": "CS00538-1",
+      "name": "joie"
+    },
+    {
+      "code": "CS00539-1",
+      "name": "wenying"
+    },
+    {
+      "code": "CS00540-1",
+      "name": "mavis"
+    },
+    {
+      "code": "CS00541-1",
+      "name": "janaki"
+    },
+    {
+      "code": "CS00542-1",
+      "name": "prabhu"
+    },
+    {
+      "code": "CS00543-1",
+      "name": "jolene"
+    },
+    {
+      "code": "CS00544-1",
+      "name": "Adonia"
+    },
+    {
+      "code": "CS00545-1",
+      "name": "sarah"
+    },
+    {
+      "code": "CS00546-1",
+      "name": "vanitha"
+    },
+    {
+      "code": "CS00547-1",
+      "name": "Samantha"
+    },
+    {
+      "code": "CS00548-1",
+      "name": "ELOIS"
+    },
+    {
+      "code": "CS00549-1",
+      "name": "sindy"
+    },
+    {
+      "code": "CS00550-1",
+      "name": "AMANDA"
+    },
+    {
+      "code": "CS00551-1",
+      "name": "Cynthia"
+    },
+    {
+      "code": "CS00552-1",
+      "name": "carmen"
+    },
+    {
+      "code": "CS00553-1",
+      "name": "Chanchal"
+    },
+    {
+      "code": "CS00554-1",
+      "name": "Pooja"
+    },
+    {
+      "code": "CS00555-1",
+      "name": "ALICIA"
+    },
+    {
+      "code": "CS00556-1",
+      "name": "Felicia"
+    },
+    {
+      "code": "CS00557-1",
+      "name": "FIRDIANA"
+    },
+    {
+      "code": "CS00558-1",
+      "name": "NAWAN"
+    },
+    {
+      "code": "CS00559-1",
+      "name": "raihah"
+    },
+    {
+      "code": "CS00560-1",
+      "name": "yongle"
+    },
+    {
+      "code": "CS00561-1",
+      "name": "esther rita"
+    },
+    {
+      "code": "CS00563-1",
+      "name": "Cleo Sim"
+    },
+    {
+      "code": "CS00564-1",
+      "name": "kiran"
+    },
+    {
+      "code": "CS00565-1",
+      "name": "GISHA CG"
+    },
+    {
+      "code": "CS00566-1",
+      "name": "adeline au"
+    },
+    {
+      "code": "CS00567-1",
+      "name": "zeenat"
+    },
+    {
+      "code": "CS00568-1",
+      "name": "michael"
+    },
+    {
+      "code": "CS00569-1",
+      "name": "selina "
+    },
+    {
+      "code": "CS00570-1",
+      "name": "aralin"
+    },
+    {
+      "code": "CS00571-1",
+      "name": "Jamie"
+    },
+    {
+      "code": "CS00572-1",
+      "name": "valerie"
+    },
+    {
+      "code": "CS00573-1",
+      "name": "sheryn"
+    },
+    {
+      "code": "CS00574-1",
+      "name": "NICOLENE TAN"
+    },
+    {
+      "code": "CS00575-1",
+      "name": "klara"
+    },
+    {
+      "code": "CS00576-1",
+      "name": "anna"
+    },
+    {
+      "code": "CS00577-1",
+      "name": "kristine"
+    },
+    {
+      "code": "CS00578-1",
+      "name": "Yugeswary Rawndran"
+    },
+    {
+      "code": "CS00579-1",
+      "name": "Julia"
+    },
+    {
+      "code": "CS00580-1",
+      "name": "Sri"
+    },
+    {
+      "code": "CS00581-1",
+      "name": "JEANETTE"
+    },
+    {
+      "code": "CS00582-1",
+      "name": "zam"
+    },
+    {
+      "code": "CS00583-1",
+      "name": "syabilla"
+    },
+    {
+      "code": "CS00584-1",
+      "name": "PEGGY"
+    },
+    {
+      "code": "CS00585-1",
+      "name": "Xanelle"
+    },
+    {
+      "code": "CS00586-1",
+      "name": "Trina"
+    },
+    {
+      "code": "CS00588-1",
+      "name": "Cheryl"
+    },
+    {
+      "code": "CS00589-1",
+      "name": "Farah"
+    },
+    {
+      "code": "CS00590-1",
+      "name": "janet"
+    },
+    {
+      "code": "CS00591-1",
+      "name": "navdisha"
+    },
+    {
+      "code": "CS00592-1",
+      "name": "liang"
+    },
+    {
+      "code": "CS00594-1",
+      "name": "Siti Aishah"
+    },
+    {
+      "code": "CS00595-1",
+      "name": "april"
+    },
+    {
+      "code": "CS00596-1",
+      "name": "DEBBY"
+    },
+    {
+      "code": "CS00597-1",
+      "name": "victoria goh"
+    },
+    {
+      "code": "CS00598-1",
+      "name": "Haslinda"
+    },
+    {
+      "code": "CS00599-1",
+      "name": "shraddha"
+    },
+    {
+      "code": "CS00600-1",
+      "name": "Crystal"
+    },
+    {
+      "code": "CS00601-1",
+      "name": "Ying Fei"
+    },
+    {
+      "code": "CS00602-1",
+      "name": "jeslyn"
+    },
+    {
+      "code": "CS00603-1",
+      "name": "Kala"
+    },
+    {
+      "code": "CS00604-1",
+      "name": "Alisha"
+    },
+    {
+      "code": "CS00606-1",
+      "name": "Joey"
+    },
+    {
+      "code": "CS00607-1",
+      "name": "Shermaine"
+    },
+    {
+      "code": "CS00608-1",
+      "name": "cafu"
+    },
+    {
+      "code": "CS00609-1",
+      "name": "philothea"
+    },
+    {
+      "code": "CS00611-1",
+      "name": "anand mithra"
+    },
+    {
+      "code": "CS00613-1",
+      "name": "sheers"
+    },
+    {
+      "code": "CS00614-1",
+      "name": "Quinn"
+    },
+    {
+      "code": "CS00617-1",
+      "name": "didi"
+    },
+    {
+      "code": "CS00618-1",
+      "name": "Zhi ning"
+    },
+    {
+      "code": "CS00619-1",
+      "name": "JESSICA"
+    },
+    {
+      "code": "CS00620-1",
+      "name": "xiaomei"
+    },
+    {
+      "code": "CS00621-1",
+      "name": "Mira"
+    },
+    {
+      "code": "CS00622-1",
+      "name": "parames"
+    },
+    {
+      "code": "CS00623-1",
+      "name": "kaixin"
+    },
+    {
+      "code": "CS00624-1",
+      "name": "alikha"
+    },
+    {
+      "code": "CS00625-1",
+      "name": "Sherlene"
+    },
+    {
+      "code": "CS00626-1",
+      "name": "Benjamin Chen"
+    },
+    {
+      "code": "CS00627-1",
+      "name": "karine"
+    },
+    {
+      "code": "CS00628-1",
+      "name": "yimon"
+    },
+    {
+      "code": "CS00629-1",
+      "name": "chong"
+    },
+    {
+      "code": "CS00630-1",
+      "name": "hannah"
+    },
+    {
+      "code": "CS00631-1",
+      "name": "rachel "
+    },
+    {
+      "code": "CS00633-1",
+      "name": "Nuhaa"
+    },
+    {
+      "code": "CS00634-1",
+      "name": "michelle"
+    },
+    {
+      "code": "CS00636-1",
+      "name": "Hilary"
+    },
+    {
+      "code": "CS00637-1",
+      "name": "Christine"
+    },
+    {
+      "code": "CS00638-1",
+      "name": "Davina"
+    },
+    {
+      "code": "CS00639-1",
+      "name": "Meryl"
+    },
+    {
+      "code": "CS00640-1",
+      "name": "Yip Waiyee"
+    },
+    {
+      "code": "CS00641-1",
+      "name": "josandra"
+    },
+    {
+      "code": "CS00642-1",
+      "name": "DEE"
+    },
+    {
+      "code": "CS00644-1",
+      "name": "valencia"
+    },
+    {
+      "code": "CS00645-1",
+      "name": "Lesley"
+    },
+    {
+      "code": "CS00646-1",
+      "name": "April"
+    },
+    {
+      "code": "CS00647-1",
+      "name": "jacqueline "
+    },
+    {
+      "code": "CS00648-1",
+      "name": "Edmund"
+    },
+    {
+      "code": "CS00649-1",
+      "name": "Sabarinathan"
+    },
+    {
+      "code": "CS00650-1",
+      "name": "Peggy"
+    },
+    {
+      "code": "CS00651-1",
+      "name": "jen"
+    },
+    {
+      "code": "CS00652-1",
+      "name": "Sharon Lee"
+    },
+    {
+      "code": "CS00653-1",
+      "name": "yap xin yu"
+    },
+    {
+      "code": "CS00654-1",
+      "name": "haley"
+    },
+    {
+      "code": "CS00655-1",
+      "name": "zay"
+    },
+    {
+      "code": "CS00656-1",
+      "name": "abherrami"
+    },
+    {
+      "code": "CS00657-1",
+      "name": "fira"
+    },
+    {
+      "code": "CS00658-1",
+      "name": "JULIET"
+    },
+    {
+      "code": "CS00659-1",
+      "name": "shreya"
+    },
+    {
+      "code": "CS00660-1",
+      "name": "Sherry"
+    },
+    {
+      "code": "CS00661-1",
+      "name": "kavitha"
+    },
+    {
+      "code": "CS00662-1",
+      "name": "jia xin chua"
+    },
+    {
+      "code": "CS00663-1",
+      "name": "michelle wong"
+    },
+    {
+      "code": "CS00664-1",
+      "name": "SITI HAJAR"
+    },
+    {
+      "code": "CS00665-1",
+      "name": "Riciel"
+    },
+    {
+      "code": "CS00666-1",
+      "name": "nana"
+    },
+    {
+      "code": "CS00667-1",
+      "name": "Cheryl"
+    },
+    {
+      "code": "CS00668-1",
+      "name": "kirthi"
+    },
+    {
+      "code": "CS00669-1",
+      "name": "Elaine"
+    },
+    {
+      "code": "CS00670-1",
+      "name": "brandon "
+    },
+    {
+      "code": "CS00671-1",
+      "name": "nabilah"
+    },
+    {
+      "code": "CS00672-1",
+      "name": "Elizabeth"
+    },
+    {
+      "code": "CS00673-1",
+      "name": "Yin You"
+    },
+    {
+      "code": "CS00674-1",
+      "name": "Texigkn"
+    },
+    {
+      "code": "CS00675-1",
+      "name": "jil"
+    },
+    {
+      "code": "CS00676-1",
+      "name": "Asha"
+    },
+    {
+      "code": "CS00677-1",
+      "name": "ajay"
+    },
+    {
+      "code": "CS00678-1",
+      "name": "cece"
+    },
+    {
+      "code": "CS00679-1",
+      "name": "angie"
+    },
+    {
+      "code": "CS00680-1",
+      "name": "Samjhana Ehetlui"
+    },
+    {
+      "code": "CS00681-1",
+      "name": "Zhou Yipin"
+    },
+    {
+      "code": "CS00682-1",
+      "name": "grace"
+    },
+    {
+      "code": "CS00683-1",
+      "name": "Christina May"
+    },
+    {
+      "code": "CS00684-1",
+      "name": "Nicole"
+    },
+    {
+      "code": "CS00685-1",
+      "name": "Wang Haixia"
+    },
+    {
+      "code": "CS00686-1",
+      "name": "Ruth Lim"
+    },
+    {
+      "code": "CS00687-1",
+      "name": "Sya"
+    },
+    {
+      "code": "CS00688-1",
+      "name": "JESSICAA"
+    },
+    {
+      "code": "CS00689-1",
+      "name": "andy"
+    },
+    {
+      "code": "CS00690-1",
+      "name": "ELEANOR"
+    },
+    {
+      "code": "CS00691-1",
+      "name": "Siti Nurhalijah"
+    },
+    {
+      "code": "CS00692-1",
+      "name": "sherry"
+    },
+    {
+      "code": "CS00693-1",
+      "name": "Hamshitha"
+    },
+    {
+      "code": "CS00694-1",
+      "name": "LingLing"
+    },
+    {
+      "code": "CS00695-1",
+      "name": "ying"
+    },
+    {
+      "code": "CS00696-1",
+      "name": "Des"
+    },
+    {
+      "code": "CS00697-1",
+      "name": "KERINE SIM"
+    },
+    {
+      "code": "CS00698-1",
+      "name": "Lorraine"
+    },
+    {
+      "code": "CS00699-1",
+      "name": "randce tan"
+    },
+    {
+      "code": "CS00700-1",
+      "name": "kelly"
+    },
+    {
+      "code": "CS00701-1",
+      "name": "YISHAN"
+    },
+    {
+      "code": "CS00705-1",
+      "name": "Lai Alting"
+    },
+    {
+      "code": "CS00706-1",
+      "name": "Rosy"
+    },
+    {
+      "code": "CS00707-1",
+      "name": "Kelly Goh"
+    },
+    {
+      "code": "CS00708-1",
+      "name": "Clarine Peh"
+    },
+    {
+      "code": "CS00709-1",
+      "name": "cloudi"
+    }
+  ],
+  "packages": [
+    {
+      "code": "C00004-1",
+      "name": "Silver Package",
+      "type": "PACKAGE",
+      "price": 150,
+      "isActive": true
+    },
+    {
+      "code": "C00006-1",
+      "name": "Gold Package",
+      "type": "PACKAGE",
+      "price": 308.82,
+      "isActive": true
+    },
+    {
+      "code": "C00009-1",
+      "name": "Silver Package",
+      "type": "PACKAGE",
+      "price": 150,
+      "isActive": true
+    },
+    {
+      "code": "C00010-1",
+      "name": "Gold Package",
+      "type": "PACKAGE",
+      "price": 350,
+      "isActive": true
+    },
+    {
+      "code": "C00011-1",
+      "name": "Diamond Package",
+      "type": "PACKAGE",
+      "price": 500,
+      "isActive": true
+    },
+    {
+      "code": "C00008-1",
+      "name": "Coupon trueblu",
+      "type": "PACKAGE",
+      "price": 0.5,
+      "isActive": true
+    }
+  ],
+  "services": [
+    {
+      "code": "S00006-1",
+      "name": "Eyebrow Pkg",
+      "type": "SERVICE",
+      "price": 8,
+      "isActive": true
+    },
+    {
+      "code": "S00002-1",
+      "name": "Female Eyebrow Threading",
+      "type": "SERVICE",
+      "price": 10.91,
+      "isActive": true
+    },
+    {
+      "code": "S00116-1",
+      "name": "Upper Lip Threading Package",
+      "type": "SERVICE",
+      "price": 9.09,
+      "isActive": true
+    },
+    {
+      "code": "S00164-1",
+      "name": "Eyebrow Female Threading Package",
+      "type": "SERVICE",
+      "price": 9.09,
+      "isActive": true
+    },
+    {
+      "code": "S00166-1",
+      "name": "Eyebrow & Upper Lip Thread Package",
+      "type": "SERVICE",
+      "price": 16.36,
+      "isActive": true
+    },
+    {
+      "code": "S00135-1",
+      "name": "Eyebrow & Upper Lip Wax 10+1",
+      "type": "SERVICE",
+      "price": 18.18,
+      "isActive": true
+    },
+    {
+      "code": "S00083-1",
+      "name": "Eyebrow & Upper Lip Pkg",
+      "type": "SERVICE",
+      "price": 14.55,
+      "isActive": true
+    },
+    {
+      "code": "S00137-1",
+      "name": "Eyebrow and Upper Lip Threading 10+1",
+      "type": "SERVICE",
+      "price": 16.36,
+      "isActive": true
+    },
+    {
+      "code": "S00093-1",
+      "name": "Eyebrow Male Threading Package",
+      "type": "SERVICE",
+      "price": 11.82,
+      "isActive": true
+    },
+    {
+      "code": "S00110-1",
+      "name": "E/B U.L Wax Pkg",
+      "type": "SERVICE",
+      "price": 18.18,
+      "isActive": true
+    },
+    {
+      "code": "S00165-1",
+      "name": "Eyebrow Thread & Upper Lip Wax Package",
+      "type": "SERVICE",
+      "price": 18.18,
+      "isActive": true
+    },
+    {
+      "code": "S00168-1",
+      "name": "Full Face Threading Package",
+      "type": "SERVICE",
+      "price": 27.27,
+      "isActive": true
+    },
+    {
+      "code": "S00138-1",
+      "name": "Upper Lip Wax 10+1 session",
+      "type": "SERVICE",
+      "price": 10.91,
+      "isActive": true
+    },
+    {
+      "code": "S00157-1",
+      "name": "Female Eyebrow Wax",
+      "type": "SERVICE",
+      "price": 16.36,
+      "isActive": true
+    }
+  ],
+  "products": [],
+  "serviceCategories": [
+    "Eyebrow Threading",
+    "Threading",
+    "Waxing"
+  ],
+  "packageCategories": [
+    "Silver Packages",
+    "Gold Packages",
+    "General Packages"
+  ]
+}

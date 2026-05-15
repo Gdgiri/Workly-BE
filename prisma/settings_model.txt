@@ -1,0 +1,29 @@
+model Settings {
+  id                      String   @id @default(uuid())
+  adminId                 String   @unique
+  
+  // Payment Gateway
+  razorpayKeyId           String?
+  razorpayKeySecret       String?
+  currency                String?  @default("INR")
+  
+  // Salon Information
+  salonName               String?
+  salonPhone              String?
+  salonAddress            String?
+  
+  // Booking Configuration
+  openingTime             String?  @default("09:00")
+  closingTime             String?  @default("18:00")
+  maxAdvanceBookingDays   Int?     @default(30)
+  cancellationPolicyHours Int?     @default(24)
+  whatsappNotifications   Boolean  @default(false)
+  
+  // Payment Modes
+  activePaymentMethods    String?  @default("CASH,CARD,UPI")
+  
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+
+  @@map("settings")
+}
